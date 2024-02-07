@@ -1,0 +1,147 @@
+:root {
+    --dark: #1d242c;
+    --blue: #0176c3;
+    --primary: #0676ed;
+    --cyan: #c7eeff;
+    --white: #fafafa;
+    --red: #ce0000;
+    --white-2: #d4d4d4;
+    --orange: #e44d26;
+    --green: #4caf50;
+    --shadow: rgba(0, 0, 0, 0.4);
+    --shadow-2: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 50px;
+    padding: 0;
+    background: radial-gradient(var(--white), var(--white-2));
+    background-attachment: fixed;
+}
+
+.logo, .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top {
+    padding-top: 10px;
+}
+
+.top-left a, .top-right a {
+    text-decoration: none;
+    color: var(--dark);
+    margin: 0 10px;
+}
+
+.logo-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    margin-right: 10px;
+    width: 70px;
+    height: auto;
+}
+
+.logo-title {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.logo-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    width: 500px;
+    padding: 8px 30px 8px 10px;
+    font-size: 16px;
+    border: 1px solid var(--white-2);
+    border-radius: 4px 0px 0px 4px;
+    margin-right: -5px;
+    background: var(--white-2);
+    outline: none;
+}
+
+.search-btn {
+    padding: 4px 8px 7px 8px;
+    border: 1px solid var(--blue);
+    border-radius: 0px 4px 4px 0px;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+nav {
+    margin-top: -15px;
+    border-radius: 10px;
+    background-color: var(--dark);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 15px;
+}
+
+nav ul li a {
+    margin: 0 20px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: var(--white-2);
+}
+
+.footer-container {
+    background-color: var(--dark);
+    border-radius: 10px;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-list h3 {
+    font-size: 0.9rem;
+    color: var(--white);
+}
+
+.footer-list p {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--white-2);
+}
+
+.footer-list p a {
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--white-2);
+    text-decoration: none;
+}
+
+.footer-list p a i {
+    font-size: 0.9rem;
+}
+
+.footer-list p a:hover {
+    color: var(--white);
+}
+
+.copyright {
+    margin: 10px;
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: var(--dark);
+    text-align: center;
+}
+
